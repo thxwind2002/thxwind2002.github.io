@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1833601070433200"
-     crossorigin="anonymous"></script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
   <title>3D 香港六合彩搞珠機（螢幕控制 3D 視覺位置）</title>
@@ -856,9 +854,9 @@
     <div class="quota-strip">
       <div>
         <span class="quota-badge">剩餘試用次數：</span>
-        <span class="quota-num" id="quotaCountText">10 次</span>
+        <span class="quota-num" id="quotaCountText">100 次</span>
       </div>
-      <div class="quota-sub red-highlight" id="dailyPlanText">每天重設 10 次免費試用</div>
+      <div class="quota-sub red-highlight" id="dailyPlanText">每天重設 100 次免費試用</div>
     </div>
 
     <div class="canvas-box" id="canvasBox">
@@ -1424,7 +1422,8 @@
     }
 
     var STORAGE_KEY = "marksix_3d_quota_guarded_v1";
-    var DAILY_FREE_RESET_COUNT = 2;
+    // 每日重設為 100 次免費試用
+    var DAILY_FREE_RESET_COUNT = 100;
     var INTEGRITY_SALT = "M6_3D_GUARD_2026_HK";
     var CLOCK_SKEW_TOLERANCE_MS = 5 * 60 * 1000;
 
@@ -1648,7 +1647,6 @@
     var CY = 248;
     var BALL_R = 6.8;
     var BALL_DIAMETER = BALL_R * 2;
-    // 大圓球體直徑改為號碼珠直徑的 12 倍
     var SPHERE_DIAMETER = BALL_DIAMETER * 12;
     var SPHERE_R = SPHERE_DIAMETER / 2;
     var SPHERE_TOP_Y = CY - SPHERE_R;
